@@ -10,6 +10,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%=  render 'layouts/shared/nav'%>
+
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </body>
 </html>

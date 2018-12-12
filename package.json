@@ -1,5 +1,8 @@
 {
   "name": "rate_this_book",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "jquery": "^3.3.1"
+  }
 }

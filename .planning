@@ -11,6 +11,7 @@
     email
     senha
     trackeable
+    quantos livros
     quantos livros favoritos
 
     tem varios livros
