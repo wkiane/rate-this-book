@@ -1,0 +1,59 @@
+# tvtime para livros
+
+  google books api
+
+
+  usuarios
+    primeiro nome
+    ultimo nome
+    data de nascimento
+    avatar
+    email
+    senha
+    trackeable
+    quantos livros favoritos
+
+    tem varios livros
+    tem varios livros favoritos
+
+    - no futuro
+      quantos livros leu
+      amigos
+
+
+
+
+  livros
+    titulo
+    criador
+    data de criação
+
+
+    tem vários fans - pessoas que favoritaram
+    tem vários comentarios
+
+    - no futuro capitulos
+
+
+  comentarios
+    titulo - nullable
+    usuario
+    livro
+    texto
+    criado_at
+    updated_at
+
+
+interface
+mobile friendly
+
+todos -
+pesquisar livros
+
+
+pagina inicial --
+- prev livros favoritos
+
+- livros recomendados - random por enquanto
+perfil do usuario
+livros favoritos
