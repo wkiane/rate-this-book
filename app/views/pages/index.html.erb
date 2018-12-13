@@ -7,8 +7,31 @@
 
   <div class="recommendations">
     <h3>You might like those...</h3>
-    <div class="book">
-      
+    <div class="columns">
+      <% @books.take(5).each do |b|%>
+        <div class="column is-one-fifth ">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                  <% if b.covers[:large] %>
+                    <img class="book-cover" src="<%= b.covers[:large] %>" alt="<%= b.title %>">
+                  <% else %>
+                    <img class="book-cover" src="/images/missing.png" alt="<%= b.title %>">
+                  <% end %>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p><b><%= b.title %></b></p>
+                <% b.authors.each do |author|%>
+                  <p><%= author %></p>
+                <% end %>
+                <a target="_blank" href="<%= b.preview_link %>">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

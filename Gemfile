@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.2'
 
 # my gems
 gem 'devise'
+gem 'google_books'
 
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
